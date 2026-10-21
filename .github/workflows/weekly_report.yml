@@ -1,0 +1,31 @@
+name: Weekly Satellite Intel Generator
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  run-weekly-intel:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Satellite Intel Script
+        run: python scripts/weekly_satellite_intel.py
+
+      - name: Commit and push weekly satellite report
+        run: |
+          git config --global user.name "Satellite Intel Bot"
+          git config --global user.email "bot@github.com"
+          git add reports/
+          git commit -m "Auto-generated weekly satellite intelligence report for South Lebanon" || exit 0
+          git push
