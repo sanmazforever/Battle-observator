@@ -1,5 +1,25 @@
-"target_name": "South Lebanon Border Sector",
-  "latitude": 33.273,
-  "longitude": 35.356,
-  "bounding_box": [35.15, 33.10, 35.55, 33.45],
-  "keywords": ["South Lebanon", "Litani", "Tyre", "border sector", "infrastructure damage", "satellite observation"]
+{
+  "target_name": "Zaporizhzhia Southern Sector (Orikhiv-Robotyne Axis)",
+  "bounding_box_km": "30x30",
+  "coordinates": {
+    "latitude": 47.450,
+    "longitude": 35.400,
+    "bbox": [35.20, 47.30, 35.65, 47.60]
+  },
+  "satellites_monitored": [
+    "Sentinel-2 (Multi-Spectral Optical - ESA)",
+    "Sentinel-1 (C-band Synthetic Aperture Radar - ESA)"
+  ],
+  "osint_and_news_sources": [
+    "Institute for the Study of War (ISW)",
+    "DeepStateMap.Live",
+    "Reuters",
+    "Associated Press (AP)",
+    "BBC News",
+    "Agence France-Presse (AFP)",
+    "Bellingcat",
+    "Liveuamap",
+    "War on The Rocks",
+    "The Defense Post"
+  ]
+}
