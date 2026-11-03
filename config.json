@@ -1,25 +1,25 @@
 {
-  "target_name": "South Lebanon - Israel Border Sector (Blue Line Axis)",
+  "target_name": "Eritrea-Ethiopia Border Region (Assab Port Axis)",
   "bounding_box_km": "30x30",
   "coordinates": {
-    "latitude": 33.270,
-    "longitude": 35.450,
-    "bbox": [35.25, 33.10, 35.65, 33.40]
+    "latitude": 12.850,
+    "longitude": 42.550,
+    "bbox": [42.40, 12.70, 42.70, 13.00]
   },
   "satellites_monitored": [
     "Sentinel-2 (Multi-Spectral Optical - ESA)",
     "Sentinel-1 (C-band Synthetic Aperture Radar - ESA)"
   ],
   "osint_and_news_sources": [
-    "Institute for the Study of War (ISW)",
-    "Alma Research and Education Center",
-    "Reuters",
-    "Associated Press (AP)",
-    "BBC News",
+    "International Crisis Group (Horn of Africa)",
+    "ISW (Africa File)",
+    "Reuters Africa",
+    "Associated Press (AP Africa)",
+    "BBC News Africa",
     "Bellingcat",
-    "Liveuamap",
-    "War on The Rocks",
-    "UNIFIL Official Reports",
+    "Liveuamap (Africa)",
+    "Addis Standard",
+    "Eritrea Hub",
     "The Defense Post"
   ]
 }
