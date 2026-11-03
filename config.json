@@ -1,10 +1,10 @@
 {
-  "target_name": "Zaporizhzhia Southern Sector (Orikhiv-Robotyne Axis)",
+  "target_name": "South Lebanon - Israel Border Sector (Blue Line Axis)",
   "bounding_box_km": "30x30",
   "coordinates": {
-    "latitude": 47.450,
-    "longitude": 35.400,
-    "bbox": [35.20, 47.30, 35.65, 47.60]
+    "latitude": 33.270,
+    "longitude": 35.450,
+    "bbox": [35.25, 33.10, 35.65, 33.40]
   },
   "satellites_monitored": [
     "Sentinel-2 (Multi-Spectral Optical - ESA)",
@@ -12,14 +12,14 @@
   ],
   "osint_and_news_sources": [
     "Institute for the Study of War (ISW)",
-    "DeepStateMap.Live",
+    "Alma Research and Education Center",
     "Reuters",
     "Associated Press (AP)",
     "BBC News",
-    "Agence France-Presse (AFP)",
     "Bellingcat",
     "Liveuamap",
     "War on The Rocks",
+    "UNIFIL Official Reports",
     "The Defense Post"
   ]
 }
