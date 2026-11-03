@@ -9,7 +9,7 @@ def load_config():
 def generate_weekly_satellite_report():
     config = load_config()
     today = datetime.now().strftime("%Y-%m-%d")
-    report_filename = f"reports/zaporizhzhia_professional_intel_{today}.md"
+    report_filename = f"reports/south_lebanon_intel_{today}.md"
     
     os.makedirs("reports", exist_ok=True)
     
@@ -33,51 +33,48 @@ def generate_weekly_satellite_report():
 
 ## 🏘️ Területi Ellenőrzés
 
-* **A szektor áttekintése:** A megfigyelt 30x30 km-es zóna északi fele stabil ukrán védelmi és logisztikai bázisként szolgál, míg a déli tengely (különösen az Orikhiv-Robotyne-Verbove vonal) továbbra is nagy intenzitású, vitatott műveleti terület. 
+* **A szektor áttekintése:** A megfigyelt 30x30 km-es zóna az ENSZ által kijelölt "Kék Vonal" (Blue Line) és a Litani-folyó közötti területet fedi le. A terület hivatalosan a libanoni állam és az UNIFIL békefenntartók felügyelete alatt áll, a gyakorlatban azonban intenzív, aszimmetrikus műveleti zóna.
 * **Települési kontroll részletesen:** 
-  * *Robotyne és környéke:* A korábbi áttörési pontok maradványai jelenleg nagyrészt szürke zónának számítanak. A falu romjai felett egyik fél sem tudott tartós, erődített állandó helyőrséget létesíteni a folyamatos tüzérségi és dróncsapások miatt [Forrás: [DeepStateMap.Live](https://deepstatemap.live/), [Institute for the Study of War - ISW](https://www.understandingwar.org/)].
-  * *Verbove térsége:* A keleti szárnyon az orosz erők pozíciói enyhén konszolidálódtak a magaslati pontokon, de az ukrán tüzérség hatékonyan tartja tűz alatt a megközelítési útvonalakat [Forrás: [ISW](https://www.understandingwar.org/), [Reuters](https://www.reuters.com/)].
-* **Helyi elosztás:** A lakott területek 90%-a elpusztult; a "kontroll" gyakran azt jelenti, hogy melyik fél drónjai és előretolt megfigyelői (*forward observers*) képesek uralni a légteret a romok felett [Forrás: [Bellingcat](https://www.bellingcat.com/)].
+  * *Határmenti falvak (pl. Aita al-Shaab, Kfar Kila, Maroun el-Ras):* A dél-libanoni síita települések a Hezbollah de facto katonai logisztikai csomópontjaiként funkcionálnak. A lakosság nagyrészt evakuált, a falvak épületállományát mindkét fél katonai célokra vagy azok megsemmisítésére fókuszálja [Forrás: [Liveuamap Lebanon](https://lebanon.liveuamap.com/), [ISW Iran Update](https://www.understandingwar.org/backgrounder/iran-update-archive)].
+  * *Észak-Izraeli szektor:* A határ izraeli oldalán lévő települések (pl. Kiryat Shmona, Metula) továbbra is zárt katonai övezetek, a civil lakosságot kimenekítették a folyamatos páncéltörő rakéta (ATGM) és drónfenyegetés miatt [Forrás: [Alma Research Center](https://israel-alma.org/), [Reuters Middle East](https://www.reuters.com/world/middle-east/)].
 
 ---
 
 ## 🛡️ Védelmi Vonalak, Erődítések & Infrastruktúra
 
-* **Többrétegű védelmi építészet:** A műholdas és OSINT adatok alapján a déli szektorban a felek mélyen tagozott, komplex erődrendszereket hoztak létre:
-  * *Harctéri árkok és kommunikációs vonalak:* A csapatok állásai szigorúan követik a mezőgazdasági sávokat elválasztó fás övezeteket (*windbreaks*), amelyek természetes optikai álcázást nyújtanak a gyalogság számára [Forrás: [War on The Rocks](https://warontherocks.com/)].
-  * *Páncélelhárító akadályok:* A déli vonalak mögött sűrű „sárkányfog” (*dragon's teeth*) mezők, aknamezők és harckocsi-elhárító árkok húzódnak, amelyek megakadályozzák a gyors gépesített áttörést [Forrás: [The Defense Post](https://www.thedefensepost.com/), [ISW](https://www.understandingwar.org/)].
-* **Tüzelőállások elhelyezkedése:** A tüzérségi és aknavető-ütegek a lakott települések mögötti domborulati hajlatokban (*hull-down positions*) és ipari maradványokban rejtőznek, minimalizálva a vizuális felderíthetőséget [Forrás: [Associated Press - AP](https://apnews.com/)].
+* **Többrétegű védelmi építészet:** A frontvonal aszimmetrikus jellegéből adódóan a felek eltérő erődítési stratégiát alkalmaznak:
+  * *Földalatti infrastruktúra:* A Hezbollah kiterjedt, sziklába vájt alagútrendszereket, rejtett fegyverraktárakat és álcázott indítóállásokat (*launch pads*) üzemeltet a hegyvidéki terepen és az erdős völgyekben [Forrás: [War on The Rocks](https://warontherocks.com/category/commentary/middle-east/)].
+  * *Kiterjesztett határvédelem:* Az Izraeli Védelmi Erők (IDF) a "Kék Vonal" mentén magas szintű technológiai szenzorhálózatot, betonfalakat, megfigyelőtornyokat és megerősített tüzérségi bázisokat tartanak fenn [Forrás: [The Defense Post](https://www.thedefensepost.com/category/middle-east/)].
 
 ---
 
 ## 🛰️ Hogy látszódik ez a műholdképekről
 
 * **Sentinel-2 (Multi-Spectral Optical, 10m felbontás):**
-  * *Növényzeti és talajkárosodás (*Burn Scars & Craters*):* A multispektrális sávok (B04, B03, B02 és NIR) elemzése kiterjedt tüzek nyomait mutatja a gabonaföldeken. A becsapódási kráterek sötét gyűrűkként rajzolódnak ki a szántóföldeken, amelyek száma heti szinten 15-20%-os növekedést mutat az aktív tüzérségi zónákban [Forrás: [ESA Copernicus Data](https://dataspace.copernicus.eu/), [Bellingcat](https://www.bellingcat.com/)].
-  * *Szerkezeti integritás:* A települések épületállományánál a tetőszerkezetek hiánya, a romok alatti hamu és a beomlott falak vizuális aláírásai (*thermal and structural anomalies*) világosan jelzik a lakhatatlan zónákat [Forrás: [Liveuamap](https://liveuamap.com/)].
+  * *Növényzeti és talajkárosodás (*Burn Scars*):* A multispektrális sávok elemzése kiterjedt tűznyomokat mutat a dél-libanoni olajfaligetekben és fenyőerdőkben. Ezek a heves tüzérségi párbajok és a gyújtólövedékek (fehérfoszfor) használatának következményei, amelyek célja a természetes álcázás megsemmisítése [Forrás: [ESA Copernicus Browser](https://browser.dataspace.copernicus.eu/), [Bellingcat Middle East](https://www.bellingcat.com/category/news/mena/)].
+  * *Szerkezeti integritás:* A precíziós légicsapások következtében a határmenti falvakban izolált, de súlyos épületkárok (összeomlott blokkok) azonosíthatók, amelyek fegyverraktárak vagy parancsnoki pontok megsemmisítésére utalnak [Forrás: [Liveuamap](https://lebanon.liveuamap.com/)].
 * **Sentinel-1 (C-band Synthetic Aperture Radar - SAR):**
-  * *Időjárás-független radar-visszaverődés (*Backscatter*):* Mivel a radar áthatol a felhőzeten, a földutakon és a másodlagos logisztikai útvonalakon fellépő koherencia-vesztés hűen mutatja a nehéz gépjárművek és lánctalpas technika mozgását. A saras, feltúrt földutak radarképe eltér a kemény, stabil aljzatú utaktól, jelezve az utánpótlás-vonalak terhelését [Forrás: [ESA Copernicus Data](https://dataspace.copernicus.eu/)].
+  * *Felszíni változások és logisztika:* A radaradatok jelentős felszíni bolygatást (*surface disruption*) mutatnak a határ közvetlen közelében, ami a heves bombázások, valamint a nehéz harcjárművek lokális határsértő manővereinek (*localized incursions*) nyomát jelzi [Forrás: [ESA Copernicus Browser](https://browser.dataspace.copernicus.eu/)].
 
 ---
 
 ## ⚔️ Taktikai Események
 
-* **A heti műveletek jellege:** A szektorban nem történtek nagyszabású, stratégiai áttörési kísérletek; a harcokat a felmorzsoló, pozíciós hadviselés határozza meg. 
-* **Technológiai dominancia:** 
-  * A térséget a kis hatótávolságú FPV drónok, a felderítő drónok és az elektronikai hadviselés (EW) általi kölcsönös zavarás (*jamming*) uralja [Forrás: [BBC News](https://www.bbc.com/), [Agence France-Presse - AFP](https://www.afp.com/)].
-  * A gyalogsági mozgásokat éjszakai hőkamerás drónokkal monitorozzák, ami miatt a csapatok nagyrészt alagutakban, pincékben vagy sötétedés után hajtanak végre rotációt [Forrás: [Reuters](https://www.reuters.com/)].
-* **Logisztikai kihívások:** Az utánpótlás-vonalak folyamatos tüzérségi tűz alatt állnak, ami kényszeríti a feleket a drónalapú logisztika és a kis méretű terepjárók (*quad bikes*) fokozott használatára [Forrás: [AP](https://apnews.com/)].
+* **A heti műveletek jellege:** A szektorban a "szemet szemért" elvű, eszkalálódó tűzpárbajok dominálnak a teljes nyílt háború határán egyensúlyozva.
+* **Technológiai és harcászati dinamika:** 
+  * A Hezbollah naponta indít irányítatlan rakétasorozatokat, öngyilkos drónokat (UAV) és irányított páncéltörő rakétákat (ATGM) izraeli katonai bázisok és kommunikációs reléállomások ellen [Forrás: [AP News (Middle East)](https://apnews.com/hub/middle-east)].
+  * Az IDF válaszul nehéztüzérségi zárótüzet, dróncsapásokat és vadászgépek (IAF) által végrehajtott precíziós bombázásokat alkalmaz a kilövőállások és a fegyverszállítmányok megsemmisítésére a hátországban is [Forrás: [BBC News (Middle East)](https://www.bbc.com/news/world/middle_east)].
 
 ---
 
 ## 🗣️ Hírforrások / Hivatalos Állítások
 
-* **Ukrán / Szövetséges Hivatalos Állítások:** 
-  * Jelentéseik szerint sikeresen hárítják el a mechanizált rohamokat, aktív ellentámadásokkal javítják a taktikailag előnyös magassági pozícióikat, és jelentős ellenséges élőerő-veszteséget okoznak a tüzérségi tűzösszpontosítással [Forrás: [Ukrinform](https://www.ukrinform.net/), [Reuters](https://www.reuters.com/), [BBC News](https://www.bbc.com/)].
-* **Orosz / Ellenoldali Hivatalos Állítások:** 
-  * Hangsúlyozzák az aktív stratégiai védelmet (*active defense*), a drónok tömeges alkalmazását az ukrán páncélosok megsemmisítésére, valamint a frontvonal kiszélesítésére tett kísérletek sikeres megakadályozását [Forrás: [RIA Novosti](https://ria.ru/), [TASS](https://tass.com/) - kereszthivatkozással [Liveuamap](https://liveuamap.com/) és [ISW](https://www.understandingwar.org/) elemzésekben].
-* **Független Nemzetközi OSINT & Elemzői Konszenzus:** 
-  * Az **Institute for the Study of War (ISW)** és a **Bellingcat** független geolokációs elemzései egybehangzóan azt mutatják, hogy a frontvonal gyakorlatilag befagyott, dinamikus egyensúlyi állapotban van. Egyik fél sem rendelkezik elegendő koncentrált páncélos erőtömeggel a mély áttöréshez, így a konfliktus morális, technológiai és tüzérségi felőrlő háborúként folytatódik [Forrás: [ISW](https://www.understandingwar.org/), [Bellingcat](https://www.bellingcat.com/), [War on The Rocks](https://warontherocks.com/)].
+* **Izraeli Védelmi Erők (IDF) Állításai:** 
+  * Hivatalos jelentéseik szerint sikeresen semmisítenek meg terrorista infrastruktúrákat, fegyverraktárakat és likvidálják a Hezbollah operatív parancsnokait, céljuk az északi lakosság biztonságos hazatérésének garantálása [Forrás: [Reuters](https://www.reuters.com/world/middle-east/), [Alma Research Center](https://israel-alma.org/)].
+* **Hezbollah / Libanoni Állítások:** 
+  * Közleményeik ("Islamic Resistance in Lebanon") szerint sikeresen bénítják meg az izraeli megfigyelő rendszereket, és közvetlen találatokat érnek el a határmenti laktanyákon, Gáza támogatásának szolidaritási akciójaként [Forrás: Kereszthivatkozással [Liveuamap](https://lebanon.liveuamap.com/) és [ISW Iran Update](https://www.understandingwar.org/backgrounder/iran-update-archive) elemzésekben].
+* **Független OSINT & Nemzetközi Konszenzus (ENSZ/UNIFIL):** 
+  * Az **UNIFIL** és a nemzetközi megfigyelők folyamatos, az 1701-es ENSZ határozatot sértő incidenst regisztrálnak mindkét fél részéről. Az **ISW** és a **Bellingcat** szerint a konfliktus jelenleg egy magas intenzitású felőrlő háború, ahol egyik fél sem kíván azonnali teljes regionális inváziót indítani, de a téves kalkuláció (*miscalculation*) miatti eszkaláció kockázata kritikus [Forrás: [UNIFIL Press](https://unifil.unmissions.org/), [ISW](https://www.understandingwar.org/), [Bellingcat](https://www.bellingcat.com/)].
 
 ---
 *Professional GEOINT & OSINT Intelligence Report automatically compiled via GitHub Actions Pipeline.*
@@ -86,7 +83,7 @@ def generate_weekly_satellite_report():
     with open(report_filename, "w", encoding="utf-8") as f:
         f.write(report_content)
     
-    print(f"[+] Professional detailed intelligence report generated -> {report_filename}")
+    print(f"[+] Professional detailed intelligence report generated for South Lebanon -> {report_filename}")
 
 if __name__ == "__main__":
     generate_weekly_satellite_report()
