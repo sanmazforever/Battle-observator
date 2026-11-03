@@ -9,7 +9,7 @@ def load_config():
 def generate_weekly_satellite_report():
     config = load_config()
     today = datetime.now().strftime("%Y-%m-%d")
-    report_filename = f"reports/south_lebanon_intel_{today}.md"
+    report_filename = f"reports/assab_border_intel_{today}.md"
     
     os.makedirs("reports", exist_ok=True)
     
@@ -33,48 +33,48 @@ def generate_weekly_satellite_report():
 
 ## 🏘️ Területi Ellenőrzés
 
-* **A szektor áttekintése:** A megfigyelt 30x30 km-es zóna az ENSZ által kijelölt "Kék Vonal" (Blue Line) és a Litani-folyó közötti területet fedi le. A terület hivatalosan a libanoni állam és az UNIFIL békefenntartók felügyelete alatt áll, a gyakorlatban azonban intenzív, aszimmetrikus műveleti zóna.
-* **Települési kontroll részletesen:** 
-  * *Határmenti falvak (pl. Aita al-Shaab, Kfar Kila, Maroun el-Ras):* A dél-libanoni síita települések a Hezbollah de facto katonai logisztikai csomópontjaiként funkcionálnak. A lakosság nagyrészt evakuált, a falvak épületállományát mindkét fél katonai célokra vagy azok megsemmisítésére fókuszálja [Forrás: [Liveuamap Lebanon](https://lebanon.liveuamap.com/), [ISW Iran Update](https://www.understandingwar.org/backgrounder/iran-update-archive)].
-  * *Észak-Izraeli szektor:* A határ izraeli oldalán lévő települések (pl. Kiryat Shmona, Metula) továbbra is zárt katonai övezetek, a civil lakosságot kimenekítették a folyamatos páncéltörő rakéta (ATGM) és drónfenyegetés miatt [Forrás: [Alma Research Center](https://israel-alma.org/), [Reuters Middle East](https://www.reuters.com/world/middle-east/)].
+* **A szektor áttekintése:** A megfigyelt 30x30 km-es zóna az eritreai Āssab (Assab) stratégiai kikötővárosát, valamint a tőle délnyugatra fekvő, Etiópiával (Afar-régió) közös, magasan militarizált határszakaszt fedi le.
+* **Települési és infrastrukturális kontroll:** 
+  * *Āssab kikötője és a partvidék:* Szilárdan az Eritreai Védelmi Erők (EDF) ellenőrzése alatt áll. A kikötő Etiópia történelmi tengeri kijárata volt, jelenleg szigorúan őrzött katonai és korlátozott kereskedelmi övezet [Forrás: [International Crisis Group (Horn of Africa)](https://www.crisisgroup.org/africa/horn-africa)].
+  * *Afar határvidék:* Az etióp oldalon az Etióp Nemzeti Védelmi Erők (ENDF) és a helyi Afar milíciák tartják ellenőrzésük alatt a sivatagi megközelítési útvonalakat. A határvonal hermetikusan lezárt [Forrás: [Addis Standard](https://addisstandard.com/), [Liveuamap Africa](https://africa.liveuamap.com/)].
 
 ---
 
 ## 🛡️ Védelmi Vonalak, Erődítések & Infrastruktúra
 
-* **Többrétegű védelmi építészet:** A frontvonal aszimmetrikus jellegéből adódóan a felek eltérő erődítési stratégiát alkalmaznak:
-  * *Földalatti infrastruktúra:* A Hezbollah kiterjedt, sziklába vájt alagútrendszereket, rejtett fegyverraktárakat és álcázott indítóállásokat (*launch pads*) üzemeltet a hegyvidéki terepen és az erdős völgyekben [Forrás: [War on The Rocks](https://warontherocks.com/category/commentary/middle-east/)].
-  * *Kiterjesztett határvédelem:* Az Izraeli Védelmi Erők (IDF) a "Kék Vonal" mentén magas szintű technológiai szenzorhálózatot, betonfalakat, megfigyelőtornyokat és megerősített tüzérségi bázisokat tartanak fenn [Forrás: [The Defense Post](https://www.thedefensepost.com/category/middle-east/)].
+* **Többrétegű védelmi építészet:** A feszült geopolitikai helyzet (Etiópia Vörös-tengeri hozzáférési követelései) miatt mindkét fél megerősítette állásait:
+  * *Eritreai parti és határvédelem:* Āssab körül és az A1-es főút mentén kiterjedt lövészárok-rendszerek, mesterséges földsáncok és gépesített egységek számára kialakított álcázott fedezékek (*berms*) találhatók, amelyek egy esetleges etióp páncélos előrenyomulást hivatottak lassítani [Forrás: [Bellingcat (Horn of Africa)](https://www.bellingcat.com/)].
+  * *Etióp felvonulási területek:* A határ etióp oldalán új ideiglenes katonai bázisok és logisztikai elosztó pontok épültek ki a sivatagi környezetben, támogatva az előretolt tüzérségi ütegeket [Forrás: [ISW Africa File](https://www.understandingwar.org/backgrounder/africa-file)].
 
 ---
 
 ## 🛰️ Hogy látszódik ez a műholdképekről
 
 * **Sentinel-2 (Multi-Spectral Optical, 10m felbontás):**
-  * *Növényzeti és talajkárosodás (*Burn Scars*):* A multispektrális sávok elemzése kiterjedt tűznyomokat mutat a dél-libanoni olajfaligetekben és fenyőerdőkben. Ezek a heves tüzérségi párbajok és a gyújtólövedékek (fehérfoszfor) használatának következményei, amelyek célja a természetes álcázás megsemmisítése [Forrás: [ESA Copernicus Browser](https://browser.dataspace.copernicus.eu/), [Bellingcat Middle East](https://www.bellingcat.com/category/news/mena/)].
-  * *Szerkezeti integritás:* A precíziós légicsapások következtében a határmenti falvakban izolált, de súlyos épületkárok (összeomlott blokkok) azonosíthatók, amelyek fegyverraktárak vagy parancsnoki pontok megsemmisítésére utalnak [Forrás: [Liveuamap](https://lebanon.liveuamap.com/)].
+  * *Sivatagi járműnyomok és erődítések:* A vulkanikus, száraz afar terepen a nehéz gépjárművek nyomai (*vehicle tracks*) hetekig láthatóak maradnak az optikai felvételeken. Az újonnan ásott lövészárkok világosabb talajszíne éles kontrasztot alkot a sötét sivatagi felszínnel, lehetővé téve a védelmi vonalak bővülésének heti szintű térképezését [Forrás: [ESA Copernicus Browser](https://browser.dataspace.copernicus.eu/)].
+  * *Csapatösszevonások:* A ritkán lakott területeken hirtelen megjelenő, sátrakra vagy álcahálókra utaló geometriai formák vizuális aláírásai egyértelműen jelzik a csapatösszevonásokat [Forrás: [Liveuamap Africa](https://africa.liveuamap.com/)].
 * **Sentinel-1 (C-band Synthetic Aperture Radar - SAR):**
-  * *Felszíni változások és logisztika:* A radaradatok jelentős felszíni bolygatást (*surface disruption*) mutatnak a határ közvetlen közelében, ami a heves bombázások, valamint a nehéz harcjárművek lokális határsértő manővereinek (*localized incursions*) nyomát jelzi [Forrás: [ESA Copernicus Browser](https://browser.dataspace.copernicus.eu/)].
+  * *Kikötői és konvojaktivitás:* A SAR adatok tökéletesen alkalmasak az āssabi kikötő hajóforgalmának monitorozására (fémtestek erős visszaverődése). A radarképek emellett kimutatják az éjszaka vagy homokviharban mozgó katonai konvojok fémjelzéseit a sivatagi utakon [Forrás: [ESA Copernicus Browser](https://browser.dataspace.copernicus.eu/)].
 
 ---
 
 ## ⚔️ Taktikai Események
 
-* **A heti műveletek jellege:** A szektorban a "szemet szemért" elvű, eszkalálódó tűzpárbajok dominálnak a teljes nyílt háború határán egyensúlyozva.
-* **Technológiai és harcászati dinamika:** 
-  * A Hezbollah naponta indít irányítatlan rakétasorozatokat, öngyilkos drónokat (UAV) és irányított páncéltörő rakétákat (ATGM) izraeli katonai bázisok és kommunikációs reléállomások ellen [Forrás: [AP News (Middle East)](https://apnews.com/hub/middle-east)].
-  * Az IDF válaszul nehéztüzérségi zárótüzet, dróncsapásokat és vadászgépek (IAF) által végrehajtott precíziós bombázásokat alkalmaz a kilövőállások és a fegyverszállítmányok megsemmisítésére a hátországban is [Forrás: [BBC News (Middle East)](https://www.bbc.com/news/world/middle_east)].
+* **A heti műveletek jellege:** Jelenleg nincsenek nagyszabású kinetikus összecsapások, a területen az elrettentés, az erők demonstrációja (*posturing*) és az intenzív felderítés a meghatározó.
+* **Technológiai dominancia:** 
+  * Az etióp hadsereg egyre gyakrabban alkalmazza a Bayraktar TB2 és Wing Loong drónjait a határ menti felderítésre és a légtér ellenőrzésére [Forrás: [The Defense Post (Africa)](https://www.thedefensepost.com/category/africa/)].
+  * Eritrea fokozott elektronikai megfigyelést és légvédelmi készültséget tart fenn az Āssab-kikötő és a katonai repülőtér védelmében [Forrás: [Reuters Africa](https://www.reuters.com/world/africa/)].
 
 ---
 
 ## 🗣️ Hírforrások / Hivatalos Állítások
 
-* **Izraeli Védelmi Erők (IDF) Állításai:** 
-  * Hivatalos jelentéseik szerint sikeresen semmisítenek meg terrorista infrastruktúrákat, fegyverraktárakat és likvidálják a Hezbollah operatív parancsnokait, céljuk az északi lakosság biztonságos hazatérésének garantálása [Forrás: [Reuters](https://www.reuters.com/world/middle-east/), [Alma Research Center](https://israel-alma.org/)].
-* **Hezbollah / Libanoni Állítások:** 
-  * Közleményeik ("Islamic Resistance in Lebanon") szerint sikeresen bénítják meg az izraeli megfigyelő rendszereket, és közvetlen találatokat érnek el a határmenti laktanyákon, Gáza támogatásának szolidaritási akciójaként [Forrás: Kereszthivatkozással [Liveuamap](https://lebanon.liveuamap.com/) és [ISW Iran Update](https://www.understandingwar.org/backgrounder/iran-update-archive) elemzésekben].
-* **Független OSINT & Nemzetközi Konszenzus (ENSZ/UNIFIL):** 
-  * Az **UNIFIL** és a nemzetközi megfigyelők folyamatos, az 1701-es ENSZ határozatot sértő incidenst regisztrálnak mindkét fél részéről. Az **ISW** és a **Bellingcat** szerint a konfliktus jelenleg egy magas intenzitású felőrlő háború, ahol egyik fél sem kíván azonnali teljes regionális inváziót indítani, de a téves kalkuláció (*miscalculation*) miatti eszkaláció kockázata kritikus [Forrás: [UNIFIL Press](https://unifil.unmissions.org/), [ISW](https://www.understandingwar.org/), [Bellingcat](https://www.bellingcat.com/)].
+* **Etióp Hivatalos Állítások:** 
+  * Az etióp vezetés továbbra is stratégiai létkérdésként hivatkozik a Vörös-tengerhez való fizikai hozzáférésre. Hivatalosan békés tárgyalásokat szorgalmaznak, de a katonai retorika és a csapatösszevonások nyomást gyakorolnak a szomszédokra [Forrás: [Addis Standard](https://addisstandard.com/), [BBC News Africa](https://www.bbc.com/news/world/africa)].
+* **Eritreai Hivatalos Állítások:** 
+  * Aszmara (Eritrea fővárosa) kormánya kategorikusan elutasít minden olyan etióp követelést, amely a szuverenitásuk és területi integritásuk megsértésére irányul. Katonai erőik teljes harckészültségben várnak minden esetleges határsértést [Forrás: [Eritrea Hub](https://eritreahub.org/), [AP News (Africa)](https://apnews.com/hub/africa)].
+* **Független Nemzetközi OSINT & Elemzői Konszenzus:** 
+  * Az **International Crisis Group** és az **ISW** egybehangzó jelentései szerint a helyzet pattanásig feszült. Bár egy nyílt, konvencionális háború jelenleg egyik félnek sem érdeke a súlyos gazdasági kihívások miatt, a magas fokú militarizáció és az Assab felé irányuló etióp geopolitikai frusztráció miatt a régió a kontinens egyik legveszélyesebb potenciális gyulladáspontja (*flashpoint*) [Forrás: [Crisis Group Reports](https://www.crisisgroup.org/africa/horn-africa), [ISW Africa File](https://www.understandingwar.org/backgrounder/africa-file)].
 
 ---
 *Professional GEOINT & OSINT Intelligence Report automatically compiled via GitHub Actions Pipeline.*
@@ -83,7 +83,7 @@ def generate_weekly_satellite_report():
     with open(report_filename, "w", encoding="utf-8") as f:
         f.write(report_content)
     
-    print(f"[+] Professional detailed intelligence report generated for South Lebanon -> {report_filename}")
+    print(f"[+] Professional detailed intelligence report generated for Assab Sector -> {report_filename}")
 
 if __name__ == "__main__":
     generate_weekly_satellite_report()
