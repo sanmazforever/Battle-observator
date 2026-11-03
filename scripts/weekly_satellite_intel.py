@@ -31,7 +31,7 @@ def generate_weekly_satellite_report():
 
 ---
 
-## 1. 🏘️ Kik uralnak milyen falvakat (Területi Ellenőrzés & Frontvonal-dinamika)
+## 1. 🏘️ Területi Ellenőrzés & Frontvonal-dinamika
 
 * **A szektor áttekintése:** A megfigyelt 30x30 km-es zóna északi fele stabil ukrán védelmi és logisztikai bázisként szolgál, míg a déli tengely (különösen az Orikhiv-Robotyne-Verbove vonal) továbbra is nagy intenzitású, vitatott műveleti terület. 
 * **Települési kontroll részletesen:** 
@@ -41,7 +41,7 @@ def generate_weekly_satellite_report():
 
 ---
 
-## 2. 🛡️ Hol vannak az állásaik (Védelmi Vonalak, Erődítések & Infrastruktúra)
+## 2. 🛡️ Védelmi Vonalak, Erődítések & Infrastruktúra
 
 * **Többrétegű védelmi építészet:** A műholdas és OSINT adatok alapján a déli szektorban a felek mélyen tagozott, komplex erődrendszereket hoztak létre:
   * *Harctéri árkok és kommunikációs vonalak:* A csapatok állásai szigorúan követik a mezőgazdasági sávokat elválasztó fás övezeteket (*windbreaks*), amelyek természetes optikai álcázást nyújtanak a gyalogság számára [Forrás: War on The Rocks].
@@ -50,7 +50,7 @@ def generate_weekly_satellite_report():
 
 ---
 
-## 3. 🛰️ Hogy látszódik ez a műholdképekről (Sentinel-1 & Sentinel-2 Műszaki Elemzés)
+## 3. 🛰️ Hogy látszódik ez a műholdképekről (Sentinel-1 & Sentinel-2)
 
 * **Sentinel-2 (Multi-Spectral Optical, 10m felbontás):**
   * *Növényzeti és talajkárosodás (*Burn Scars & Craters*):* A multispektrális sávok (B04, B03, B02 és NIR) elemzése kiterjedt tüzek nyomait mutatja a gabonaföldeken. A becsapódási kráterek sötét gyűrűkként rajzolódnak ki a szántóföldeken, amelyek száma heti szinten 15-20%-os növekedést mutat az aktív tüzérségi zónákban [Forrás: ESA Sentinel-2 Telemetry, Bellingcat].
@@ -60,7 +60,7 @@ def generate_weekly_satellite_report():
 
 ---
 
-## 4. ⚔️ Mi folyik a környéken (Harcmező Dinamika & Taktikai Események)
+## 4. ⚔️ Taktikai Események
 
 * **A heti műveletek jellege:** A szektorban nem történtek nagyszabású, stratégiai áttörési kísérletek; a harcokat a felmorzsoló, pozíciós hadviselés határozza meg. 
 * **Technológiai dominancia:** 
@@ -70,7 +70,7 @@ def generate_weekly_satellite_report():
 
 ---
 
-## 5. 🗣️ Ki mit mond (Hírforrások, Hivatalos Állítások és OSINT Szintézis)
+## 5. 🗣️ Hírforrások, Hivatalos Állítások
 
 * **Ukrán / Szövetséges Hivatalos Állítások:** 
   * Jelentéseik szerint sikeresen hárítják el a mechanizált rohamokat, aktív ellentámadásokkal javítják a taktikailag előnyös magassági pozícióikat, és jelentős ellenséges élőerő-veszteséget okoznak a tüzérségi tűzösszpontosítással [Forrás: Ukrinform, Reuters, BBC News].
