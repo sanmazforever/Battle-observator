@@ -1,7 +1,7 @@
 # 🛰️ Professional Strategic GEOINT & OSINT Intelligence Report
-> **Target Sector:** Zaporizhzhia Southern Sector (Orikhiv-Robotyne Axis)  
-> **Area Scope:** 30x30 km Bounding Box `[35.2, 47.3, 35.65, 47.6]`  
-> **Center Coordinates:** Lat: 47.45, Lon: 35.4  
+> **Target Sector:** South Lebanon - Israel Border Sector (Blue Line Axis)  
+> **Area Scope:** 30x30 km Bounding Box `[35.25, 33.1, 35.65, 33.4]`  
+> **Center Coordinates:** Lat: 33.27, Lon: 35.45  
 > **Report Date:** 2026-11-03  
 > **Primary Sensors:** Sentinel-2 (Multi-Spectral Optical - ESA), Sentinel-1 (C-band Synthetic Aperture Radar - ESA)  
 > **Cross-Reference Base:** 10 Verified International & OSINT Feeds
