@@ -12,15 +12,15 @@ A központi konfigurációs fájl strukturált formában tárolja a koordinátá
 3. Fázis: Automatikus Adatfeldolgozó Szkript 
 A Python beolvassa a konfigurációt, majd dinamikusan generálja a napi dátummal ellátott Markdown jelentéseket, és biztosítja, hogy minden riport fixen 5 professzionális szempontot dolgozzon fel részletesen, közvetlen forrásmegjelölésekkel:
 
-Kik uralnak milyen falvakat (Területi ellenőrzés & frontvonal-dinamika)
+Területi ellenőrzéz
 
-Hol vannak az állásaik (Védelmi vonalak, erődítések, aknamezők)
+Védelmi vonalak, erődítések, aknamezők
 
 Hogy látszódik ez a műholdképekről (Sentinel-1 SAR és Sentinel-2 optikai elemzés)
 
-Mi folyik a környéken (Taktikai események és harcmező-dinamika)
+Taktikai események
 
-Ki mit mond (Hivatalos narratívák és független OSINT konszenzus)
+Hivatalos narratívák
 
 4. Fázis: Felhőbeli Automatikus Futtatás
 Minden egyes hétfőn írja meg a jelentést az adott csatatérről. Gyakrabban nem lehetséges, mert a műholdak csak 5 naponta tudnak frissebb információkkal szolgálni.
